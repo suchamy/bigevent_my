@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: url(../images/login_bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 5%;
+}
+
+.layui-main {
+    width: 100%;
+    border-top: 1px solid transparent;
+}
+
+.login-box {
+    position: absolute;
+    width: 400px;
+    height: 270px;
+    padding: 0 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.login-title {
+    width: 100%;
+    height: 60px;
+    background: url(../images/login_title.png) no-repeat center;
+    background-size: 47%;
+}
+
+.login-username,
+.login-psw {
+    height: 40px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+
+.login-username::placeholder,
+.login-psw::placeholder {
+    font-size: 10px;
+    color: #aaa;
+}
+
+.username-box,
+.psw-box {
+    position: relative;
+}
+
+i.iconfont {
+    position: absolute;
+    font-size: 20px;
+}
+
+.icon-user {
+    top: 10px;
+    left: 10px;
+}
+
+.icon-psw {
+    top: 10px;
+    left: 10px;
+}
+
+.icon-eye {
+    top: 10px;
+    right: 15px;
+}
+
+.login-btn {
+    font-size: 12px;
+}
+
+.login-to-reg {
+    display: block;
+    color: #1e9fff;
+    margin-top: 10px;
+}
+
+.reg-box {
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 355px;
+    padding: 0 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.reg-title {
+    width: 100%;
+    height: 60px;
+    background: url(../images/login_title.png) no-repeat center;
+    background-size: 47%;
+}
+
+.reg-username,
+.reg-psw,
+.reg-psw-confirm {
+    height: 40px;
+    line-height: 28px;
+    margin-bottom: 25px;
+    padding-left: 40px;
+}
+
+.reg-username::placeholder,
+.reg-psw::placeholder,
+.reg-psw-confirm::placeholder {
+    font-size: 10px;
+    color: #aaa;
+}
+
+.username-box,
+.psw-box,
+.psw-confirm-box {
+    position: relative;
+}
+
+i.iconfont {
+    position: absolute;
+    font-size: 20px;
+}
+
+.icon-user {
+    top: 10px;
+    left: 10px;
+}
+
+.icon-psw {
+    top: 10px;
+    left: 10px;
+}
+
+.icon-eye {
+    top: 10px;
+    right: 15px;
+}
+
+.reg-btn {
+    font-size: 12px;
+}
+
+.reg-to-login {
+    display: block;
+    color: #1e9fff;
+    margin-top: 20px;
+}
