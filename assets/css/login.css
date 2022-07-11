@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+span {
+    font-size: 10px;
+}
+
 html,
 body {
     width: 100%;
@@ -26,7 +30,7 @@ body {
 .login-box {
     position: absolute;
     width: 400px;
-    height: 270px;
+    height: 280px;
     padding: 0 20px;
     top: 50%;
     left: 50%;
@@ -46,7 +50,7 @@ body {
 .login-psw {
     height: 40px;
     line-height: 28px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     padding-left: 40px;
 }
 
@@ -86,9 +90,7 @@ i.iconfont {
 }
 
 .login-to-reg {
-    display: block;
     color: #1e9fff;
-    margin-top: 10px;
 }
 
 .reg-box {
@@ -116,7 +118,7 @@ i.iconfont {
 .reg-psw-confirm {
     height: 40px;
     line-height: 28px;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
     padding-left: 40px;
 }
 
@@ -158,7 +160,5 @@ i.iconfont {
 }
 
 .reg-to-login {
-    display: block;
     color: #1e9fff;
-    margin-top: 20px;
 }
