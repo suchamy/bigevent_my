@@ -1,0 +1,55 @@
+.layui-footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+.iconfont {
+    margin-right: 10px;
+}
+
+.layui-nav-child .iconfont {
+    margin-left: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.layui-body {
+    overflow: hidden;
+}
+
+a {
+    transition: none !important;
+}
+
+.userinfo {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 12px;
+    user-select: none;
+}
+
+.layui-nav-img {
+    width: 40px;
+    height: 40px;
+}
+
+.layui-side-scroll .userinfo {
+    border-bottom: 1px solid #666;
+}
+
+.text-avatar {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: hotpink;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: greenyellow;
+    margin-right: 10px;
+}
