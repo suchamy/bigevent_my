@@ -15,35 +15,34 @@ $(function () {
         });
     })
 
-
-    function getUserinfo() {
-        $.ajax({
-            type: "GET",
-            url: '/my/userinfo',
-            headers: {
-                Authorization: localStorage.getItem('token') || ''
-            },
-            success: function (res) {
-                if (res.status === 1) {
-                    return layer.msg(res.message)
-                }
-                renderAvatar(res.data)
-            }
-        })
-    }
-
-    function renderAvatar(info) {
-        //获取用户名称
-        let uname = info.nickname || info.username
-        // 渲染欢迎信息
-        $('.welcome').html(uname)
-        // 渲染头像
-        if (info.user_pic) {
-            $('.layui-nav-img').src(info.user_pic).show()
-            $('.text-avatar').hide()
-        } else {
-            $('.layui-nav-img').hide()
-            $('.text-avatar').html(uname[0].toUpperCase()).show()
-        }
-    }
 })
+
+function getUserinfo() {
+    $.ajax({
+        type: "GET",
+        url: '/my/userinfo',
+        headers: {
+            Authorization: localStorage.getItem('token') || ''
+        },
+        success: function (res) {
+            if (res.status === 1) {
+                return layer.msg(res.message)
+            }
+            renderAvatar(res.data)
+        }
+    })
+}
+function renderAvatar(info) {
+    //获取用户名称
+    let uname = info.nickname || info.username
+    // 渲染欢迎信息
+    $('.welcome').html(uname)
+    // 渲染头像
+    if (info.user_pic) {
+        $('.layui-nav-img').src(info.user_pic).show()
+        $('.text-avatar').hide()
+    } else {
+        $('.layui-nav-img').hide()
+        $('.text-avatar').html(uname[0].toUpperCase()).show()
+    }
+}

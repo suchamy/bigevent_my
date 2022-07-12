@@ -7,7 +7,7 @@ $(function () {
 
         // 同意为有权限的接口设置headers请求头
         if (options.url.indexOf('/my') !== -1) {
-            options.headers.Authorization = localStorage.getItem('token')
+            options.headers = { Authorization: localStorage.getItem('token') }
         }
 
         // 控制用户访问权限
