@@ -31,7 +31,7 @@ $(function () {
         let data = $('.reg-form').serialize()
         $.ajax({
             type: "POST",
-            url: 'http://www.liulongbin.top:3007/api/reguser',
+            url: '/api/reguser',
             data: data,
             success: function (res) {
                 if (res.status === 1) {
@@ -48,17 +48,19 @@ $(function () {
         let data = $('.login-form').serialize()
         $.ajax({
             type: "POST",
-            url: 'http://www.liulongbin.top:3007/api/login',
+            url: '/api/login',
             data: data,
             success: function (res) {
                 if (res.status === 1) {
                     return layer.msg(res.message)
                 }
-                layer.msg('登录成功!')
-                // 将登录成功得到的 token 字符串，保存到 localStorage 中 
-                localStorage.setItem('token', res.token)
-                // 跳转到后台主页 
-                location.href = './index.html'
+                layer.msg('登录成功!', function () {
+                    // 将登录成功得到的 token 字符串，保存到 localStorage 中 
+                    localStorage.setItem('token', res.token)
+                    // 跳转到后台主页 
+                    location.href = './index.html'
+                })
+
             }
         })
     })
