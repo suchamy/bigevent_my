@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f3f5;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.layui-card-header {
+    padding: 10px;
+    text-indent: 1.2em;
+}
+
+.red {
+    font-size: 16px;
+    color: red;
+    margin-right: 3px;
+}
+
+.layui-form {
+    width: 500px;
+}
+
+.layui-input-block {
+    position: relative;
+}
+
+.input-eye {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 20px;
+}
