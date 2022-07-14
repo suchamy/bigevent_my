@@ -39,7 +39,7 @@ function renderAvatar(info) {
     $('.welcome').html(uname)
     // 渲染头像
     if (info.user_pic) {
-        $('.layui-nav-img').src(info.user_pic).show()
+        $('.layui-nav-img').attr('src', info.user_pic).show()
         $('.text-avatar').hide()
     } else {
         $('.layui-nav-img').hide()
