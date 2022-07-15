@@ -20,7 +20,7 @@ $(function () {
     })
 
     $('#uploadFile').on('change', function (e) {
-        console.log(e)
+        // console.log(e)
         let file_list = e.target.files
         if (file_list.length === 0) {
             return layer.msg('请选择图片!')
