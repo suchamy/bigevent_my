@@ -3,8 +3,8 @@ $(function () {
     $.ajaxPrefilter(function (options) {
 
         // 统一为ajax拼接根路径
-        options.url = 'http://www.liulongbin.top:3007' + options.url
-
+        // options.url = 'http://www.liulongbin.top:3007' + options.url
+        options.url = 'http://127.0.0.1:3007' + options.url
         // 同意为有权限的接口设置headers请求头
         if (options.url.indexOf('/my') !== -1) {
             options.headers = { Authorization: localStorage.getItem('token') }
